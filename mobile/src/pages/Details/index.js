@@ -6,6 +6,7 @@ import * as MailComposer from 'expo-mail-composer';
 
 import styles from './styles'
 import logoImg from '../../assets/logo.png'
+import api from '../../services/api';
 
 export default function Details() {
   const navigation = useNavigation();
@@ -26,6 +27,8 @@ export default function Details() {
   function sendWhatsApp() {
     Linking.openURL(`whatsapp://send?text=${message}&phone=+5511974194463`)
   }
+
+  
 
   return (
     <View style={styles.container}>
